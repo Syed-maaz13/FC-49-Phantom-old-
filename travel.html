@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/5e0d071893.js"
       crossorigin="anonymous"
     ></script>
+    
     <title>Bus Booking Form | Bus Stickers</title>
   </head>
   <body>
@@ -51,39 +52,37 @@
       </div>
     </nav>
     <div class="container mt-3">
-      <form>
+      <form id="start">
         <fieldset>
           <legend>Travel Form</legend>
 
           <div class="form-group">
-            <label for="exampleSelect1" class="form-label mt-4"
-              >Choose Starting Point</label
-            >
-            <select class="form-select" id="exampleSelect1">
-              <option>Jayanagara 4th Block</option>
-              <option>Sanjay Gandhi Hospital</option>
-              <option>Carmel Convent</option>
-              <option>Pump House</option>
-              <option>East End Circle</option>
+            <label for="exampleSelect1" class="form-label mt-4">Choose Starting Point</label>
+            <select class="form-select" id="exampleSelect1" name="source">
+              <option id="1000">Jayanagara 4th Block</option>
+              <option id="2000" selected >Sanjay Gandhi Hospital</option>
+              <option id="3000">Carmel Convent</option>
+              <option id="4000">Pump House</option>
+              <option id="5000">East End Circle</option >
             </select>
           </div>
           <br />
+
           <div class="form-group">
-            <label for="exampleSelect1" class="form-label mt-4"
-              >Choose Destination Point</label
-            >
-            <select class="form-select" id="exampleSelect1">
-              <option>Jayanagara 4th Block</option>
-              <option>Sanjay Gandhi Hospital</option>
-              <option>Carmel Convent</option>
-              <option>Pump House</option>
-              <option>East End Circle</option>
+            <label for="exampleSelect2" class="form-label mt-4">Choose Destination Point</label>
+            <select class="form-select" id="exampleSelect2" name="dest">
+              <option id="1001">Jayanagara 4th Block</option>
+              <option id="2001">Sanjay Gandhi Hospital</option>
+              <option id="3001">Carmel Convent</option>
+              <option id="4001">Pump House</option>
+              <option id="5001">East End Circle</option>
             </select>
           </div>
           <br />
           <button type="submit" class="btn btn-primary">Submit</button>
         </fieldset>
       </form>
+      <br>
     </div>
     <footer class="bg-dark text-center text-white" style="position:fixed;bottom:0; width:100%">
       <div class="container p-4">
@@ -155,5 +154,6 @@
         &copy 2022 All rights reserved.
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
