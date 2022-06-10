@@ -58,9 +58,10 @@
 
           <div class="form-group">
             <label for="exampleSelect1" class="form-label mt-4">Choose Starting Point</label>
-            <select class="form-select" id="exampleSelect1" name="source">
+            <select class="form-select" id="exampleSelect1" name="source" required>
+              <option id="0000" disabled selected>Select</option>
               <option id="1000">Jayanagara 4th Block</option>
-              <option id="2000" selected >Sanjay Gandhi Hospital</option>
+              <option id="2000">Sanjay Gandhi Hospital</option>
               <option id="3000">Carmel Convent</option>
               <option id="4000">Pump House</option>
               <option id="5000">East End Circle</option >
@@ -70,7 +71,7 @@
 
           <div class="form-group">
             <label for="exampleSelect2" class="form-label mt-4">Choose Destination Point</label>
-            <select class="form-select" id="exampleSelect2" name="dest">
+            <select class="form-select" id="exampleSelect2" name="dest" required>
               <option id="1001">Jayanagara 4th Block</option>
               <option id="2001">Sanjay Gandhi Hospital</option>
               <option id="3001">Carmel Convent</option>
@@ -79,7 +80,7 @@
             </select>
           </div>
           <br />
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
         </fieldset>
       </form>
       <br>
@@ -99,7 +100,7 @@
         <section class="mb-4">
           <p>
             This project is a part of Fantom Code Hackathon 2022. It is made by
-            Syed Ibrahim Maaz, Tejas Ganesh Joshi, Shravya and Harshita from
+            Syed Ibrahim Maaz, Tejas Ganesh Joshi, Shravya Suresh and Harshita JK from
             RVITM.
           </p>
           <p>Powered by <a href="https://goqr.me/" class="link-light">GOQR API</a> and <a href="https://stipop.io/en" class="link-light">Stipop API</a>. Made with Bootstrap.</p>
